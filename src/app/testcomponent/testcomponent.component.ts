@@ -12,7 +12,7 @@ import { Observable } from 'rxjs'
   styleUrls: ['./testcomponent.component.css']
 })
 export class TestcomponentComponent {
-  offensiveWords = ['demon', 'gun'];
+  offensiveWords = ['demon', 'gun' ];
   userList = [{
     id: 'e3d46de8c7194cb1a52345195c15dc42',
     name: 'Yui',
