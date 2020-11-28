@@ -1,0 +1,7 @@
+.hiddenComponent{
+    visibility: hidden;
+}
+
+.shownComponent{
+    visibility: visible;
+}

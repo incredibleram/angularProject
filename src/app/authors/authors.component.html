@@ -1,0 +1,8 @@
+<h2>Authors</h2>
+  <ul *ngFor="let authors of author">
+      <li>{{authors}}</li>
+  </ul>
+  <input (keyup)="onkeyUp($event)"/><br>
+  <input [(ngModel)]="email" (keyup.enter)="onkeyUp($event)"/><br>
+  <label>{{content | capitalizer}}</label><br>
+ 

@@ -1,0 +1,14 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <div class="form-group">
+        <label for="name" id="idLbl">Name</label><br>
+        <input required minlength="3" maxlength="10" ngModel name="name" id="name" 
+        #name="ngModel" pattern="banana" type="text"/><br>
+        <div class="alert alert-danger" id="error" *ngIf="!name.valid && name.touched">
+            there is error
+        </div>
+        <label for="comments" id="commentsLbl">Comments</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+        <button class="btn btn-primary" id="submit">Submit</button>
+    </div>
+</form>
+
